@@ -1,0 +1,335 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex; /* Добавлено для использования flexbox */
+	background-color: #2A2A2A;	
+}
+
+nav {
+    padding-top: 10px;
+    padding-left: 10px;
+    color: white;
+    width: 15%;
+    background-color: #191918; 
+}
+.search 
+{
+    position: absolute;
+    margin-top: -10px;
+}
+header 
+{
+-webkit-box-shadow: -7px 3px 9px -5px rgba(0, 0, 0, 0.83);
+-moz-box-shadow: -7px 3px 9px -5px rgba(0, 0, 0, 0.83);
+box-shadow: -7px 3px 9px -5px rgba(0, 0, 0, 0.83);
+}
+main
+{
+	font-family: CONSOLAS;
+}
+.content-flex   /* Занимает оставшееся пространство после nav для header и main */
+{
+    flex: 1; 
+	-webkit-box-shadow: -7px 3px 9px -5px rgba(0, 0, 0, 0.83); /*тень от header и main*/
+	-moz-box-shadow: -7px 3px 9px -5px rgba(0, 0, 0, 0.83);
+	box-shadow: -7px 3px 9px -5px rgba(0, 0, 0, 0.83);
+}
+.hello_world
+{
+    width: 207px; 
+    background-color: gray;
+    padding: 10px;
+    margin-left: 8px;
+    margin-top: -6px;
+    position: absolute;
+}
+.text_header_na_kartinke
+{
+	font-family: cursive;
+    color: #fff;
+    margin-left: 40%;
+    padding-bottom: 15%;
+    position: absolute;
+    transform: translate(-45%, -90%);
+}
+.gradient-line 
+{
+	border-top: 1px solid white;
+    height: 50px;
+    background: linear-gradient(to bottom, #5c5c5c, #fff);
+    position: relative;
+    margin-top: -10px;
+}
+.text_on_line
+{
+	position: absolute;
+	transform: translate(240%, -190%);
+	font-family: CORBEL;
+	font-size: 20px;
+}
+.shapka_main
+{
+	color: #fff;
+	margin-left: 3%;
+	margin-top: 2%
+}
+
+.page-footer 
+{		
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 8%;
+}
+
+.text_footer
+{
+    position: absolute;
+    transform: translate(-10%, -100%);
+	padding-left: 3%;
+	padding-bottom: 1.7%;
+	opacity: 0.5;
+}
+.text_footer2
+{
+    position: absolute;
+    transform: translate(-10%, -100%);
+	right: 0;
+	padding-bottom: 1%;
+	opacity: 0.5;
+}
+.foot_line
+{
+	
+	border: 1px solid white;
+	position: relative;
+    background-color: #C1C2BD;	
+	height: 100%;
+	bottom:0;
+}
+
+/*Оформляем главное меню, задаём ШИРИНУ, убираем отступы и маркеры пунктов*/
+.navv1 
+{
+	border: solid 10px #101011;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}
+/*ГРАНИЦЫ элементов списков ГЛАВНОГО МЕНЮ*/
+.navv1 > li 
+{
+    margin-bottom: -1px;
+    border: 1px solid #101011;
+}
+
+.l1
+{
+background-color: #A6BD0D;
+border: none;
+width: 145%;
+height: 120%;	
+}
+.l2
+{
+	background-color:#1F1F1F;
+	margin-top:5px;
+	width: 145%;
+}
+.nav1
+{
+	max-width: 80%;
+	
+}
+.list-container 
+{
+	margin-top: 2%;
+    max-width: 93%; /* Максимальная ширина контейнера */
+    max-height: 300%; /* Максимальная высота контейнера */
+    padding: 10px; /* Отступы внутри контейнера */
+    box-sizing: border-box; /* Включение отступов в общий размер */
+    background-color: #000; /* Черный фон контейнера */
+}
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ширина списка равна ширине контейнера */
+    height: 100%; /* Высота списка равна высоте контейнера */
+}
+li 
+{
+    height: 33%; /* Высота каждого пункта */
+    color: white;
+    font-size: 18px;
+	padding: 3%;
+}
+.green 
+{
+    background-color: #AFC10F; /* Зеленый фон */
+	margin-bottom: 4%;
+	font-weight: bolder;
+}
+.dark-gray 
+{
+	background-color: #1F1F1F; /* Темно-серый фон */
+	border: 2px solid #1c1c1c;
+	color: #5F5D54;
+	font-family: monospace;
+
+}
+.input-container 
+{
+	width: 90%; /* Ширина контейнера */
+}
+input[type="text"] 
+{
+    width: 100%; /* Ширина поля ввода */
+    height: 40px; /* Высота поля ввода */
+    box-sizing: border-box; /* Включение отступов и границ в общий размер */
+}
+
+.read:link 
+{
+	color: #5D7130;
+}
+.read:visited
+{
+	color: #5D7130;
+}
+.read:active
+{
+	color: #e623f7;
+}
+.white:link 
+{
+	color: white;
+	text-decoration:none;
+}
+.white:visited
+{
+	color: white;
+	text-decoration:none;
+}
+.white:active
+{
+	text-decoration:none;
+	color: #e623f7;
+}
+.black:link
+{
+	text-decoration:none;
+	color: black;
+}
+.black:visited
+{
+	text-decoration:none;
+	color: black;
+}
+.black:active
+{
+	text-decoration:none;
+	color: #e623f7;
+}
+
+/* p2 */
+
+
+.eco
+{
+padding:20px;	
+}
+.p1
+{
+	margin-top: 15%;
+	float: right;
+}
+.table1
+{
+
+	border: 2px solid white;
+	width: 59%;
+}
+td 
+{
+    border: 1px solid black; /* Добавляет черные линии для ячеек */
+    padding: 8px; /* Добавляет отступы внутри ячеек */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+th
+{
+	border: 2px solid black;
+}
+.commentarii
+{
+color: white;
+margin-left: 5%;	
+}
+.like
+{
+	position: absolute;
+	margin-top: 0.01%;
+}
+.avtorcom
+{
+	border: 1px solid white;
+	max-width: 92%;
+	padding: 10px;
+}
+
+
+/* p3*/
+
+.table1
+{
+
+	border: 2px solid white;
+	width: 59%;
+}
+.commentarii
+{
+color: white;
+margin-left: 5%;	
+}
+.like
+{
+	position: absolute;
+	margin-top: 0.01%;
+}
+.avtorcom
+{
+	border: 1px solid white;
+	max-width: 92%;
+	padding: 10px;
+}
+
+.ultext
+{
+	height: 0%; /* Высота каждого пункта */
+    color: white;
+    font-size: 16px;
+	padding: 0%;
+	margin: 0%;
+
+}
+.border1
+{
+		border: 2px solid white;
+}
+.whie:link 
+{
+	color: white;
+}
+.whie:visited
+{
+	color: white;
+}
+.whie:active
+{
+	color: #e623f7;
+}
